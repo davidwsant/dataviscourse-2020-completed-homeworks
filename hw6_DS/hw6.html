@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 6 - The State of the State of the State </title>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <!--  <script src="https://d3js.org/d3.v6.js"></script> -->
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-force.v2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <!--<script src="https://unpkg.com/d3-regression@1.3.4/dist/d3-regression.min.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/bubbleChart.js" ></script>
+    <script src="js/table.js"></script>
+    <script src="js/script.js"></script>
+    <!-- 
+       Bootstrap styling if you want to use it:  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+</head>
+
+<body style="padding-left: 20px" >
+    <div id="header-wrap" > <!-- style="display:flex" -->
+        <div style="display:flex; width:1400px; padding-top: 25px"> 
+            <div style="flex-grow: 4; flex-basis: 0">
+                <div> <!-- style="flex-grow: 1" -->
+                    <h1 style="margin-top:0">The State of the State of the States</h1>
+                    <div>Name: David Sant; E-Mail: david.sant@utah.edu; UID: u0454956</div>
+                </div>
+            </div>
+            <div style="flex-grow: 5; flex-basis: 0; margin-top: 15px"> 
+                
+                <div>  <!-- style="flex-grow: 1" -->
+                    At the beginning of the year, each governor lays out their policy 
+                    priorities in their version of the State of the Union address — a “state of the state”
+                    address. We conducted a text analysis of all 50 governors’ 2019 state of the state
+                    speeches to see what issues were talked about the most and whether there were 
+                    differences between what Democratic and Republican governors were focusing on.
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="buttons" style="margin-top: 25px">
+        <span style="padding-right:10px">Grouped by Topic</span>
+        <input onchange="changeLocation(this.checked)" id="toggle-switch" type="checkbox" data-toggle="toggle" data-style="ios"/>
+        <button onclick="storyTelling()" type="button" 
+            class="btn btn-outline-primary" style="margin-left:10px">
+            WHERE DO THEY MATCH?
+        </button>
+        <!-- Add some buttons here -->
+    </div>
+    <div id="second-row" style="display:flex; margin-top: 15px" class="wrapper">
+        <div id="bubble-swarm" style="flex-grow: 2"></div>
+        <table id="table-element" style="flex-grow: 1">
+            <thead id="predictionTableHead">
+
+            </thead>
+            <tbody id="predictionTableBody" style="line-height:1">
+
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>

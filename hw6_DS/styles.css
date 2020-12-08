@@ -1,0 +1,113 @@
+* {
+    font-family: "Work Sans"
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; }
+.toggle.ios .toggle-handle { border-radius: 20rem; }
+
+.wrapper {
+    width: 1400px; 
+    height: 1000px;
+    margin: auto;
+}
+
+.primaryLabel {
+    font-weight: bold; 
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.testing {
+    color: black;
+    fill: black;
+}
+
+
+
+.economy {
+    color: #66c2a5;
+    fill: #66c2a5;
+}
+
+.energy {
+    color: #f98d62;
+    fill: #f98d62;
+}
+
+.crime {
+    color: #8da0cb;
+    fill: #8da0cb;
+}
+
+.education {
+    color: #e78ac3;
+    fill: #e78ac3;
+}
+
+.health {
+    color: #a6d855;
+    fill: #a6d855;
+}
+
+.mental {
+    color: #fcd92f;
+    fill: #fcd92f;
+}
+
+.left {
+    color:blue;
+    fill: blue;
+}
+
+.right {
+    color:red;
+    fill: red;
+}
+
+.wrapper2 {
+    width: 650px; 
+    height: 200px; /* Will be taken out later*/
+    margin: auto;
+}
+
+.view {
+    width: 750px;
+    /*margin: auto;*/
+    padding: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.sorting {
+    background: black;
+    color: white;
+}
+
+.sortable {
+    user-select: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.sortable:hover {
+    background: #d1d1d1;
+}
+
+.sortable.sorting:hover {
+    background: #232323;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.button-clicked circle,  
+.button-clicked path, 
+.button-clicked text, 
+.button-clicked td, 
+.button-clicked th,
+.button-clicked line,
+.button-clicked-misc {
+    opacity: 0.25
+}
