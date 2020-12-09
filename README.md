@@ -1,5 +1,7 @@
 # 2020 Data Visualization CS 6630 Completed Homeworks
 
+The functionality of the solutions are hosted on [GitPages](https://davidwsant.github.io/dataviscourse-2020-completed-homeworks/)
+
 This repository contains the solutions to the homework assignments for the 2020
 Data Visualization course (CS 6630/CS5630) taught by Alex Lex. The original assignments
 can be found in the [2020_dataviscourse_homework](https://github.com/dataviscourse/2020_dataviscourse_homework)
